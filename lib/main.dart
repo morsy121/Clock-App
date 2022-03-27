@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        splashColor: Colors.teal,
-        primaryColor: Colors.teal,
-      ),
+          splashColor: Colors.teal,
+          //primaryColor: Colors.teal,
+          colorScheme:
+              ColorScheme.light(background: Colors.teal, primary: Colors.teal)),
       home: HomeLayout(),
     );
   }
